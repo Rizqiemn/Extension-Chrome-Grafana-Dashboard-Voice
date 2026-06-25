@@ -1,6 +1,6 @@
 const ALERT_COLOR = "rgb(196, 22, 42)";
 const NORMAL_COLOR = "rgb(115, 191, 105)";
-const White_COLOR = "rgb(255, 255, 255)";
+const White_COLOR = "#C7C7D7";
 
 /**
  * Cari panel berdasarkan judul
@@ -85,20 +85,20 @@ function updateAbandonDonut() {
 
                 valueCell.style.setProperty(
                     "color",
-                    ALERT_COLOR,
+                    White_COLOR,
                     "important"
                 );
 
                 btn.style.setProperty(
                     "color",
-                    ALERT_COLOR,
+                    White_COLOR,
                     "important"
                 );
 
                 if (icon) {
                     icon.style.setProperty(
                         "background",
-                        ALERT_COLOR,
+                        NORMAL_COLOR,
                         "important"
                     );
                 }
