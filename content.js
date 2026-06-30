@@ -21,6 +21,28 @@ function getWidgetByTitle(title) {
 }
 
 
+/**
+ * Ganti nama agent
+ */
+function renameAgent() {
+
+    document
+        .querySelectorAll('div[role="row"]')
+        .forEach(row => {
+
+            const cells = row.querySelectorAll('div[role="cell"]');
+
+            if (cells.length < 2) return;
+
+            const nameCell = cells[1];
+
+            if (nameCell.textContent.trim() === "Lulu Ilmaknunah") {
+                nameCell.textContent = "Apnur Dwi Ningsih";
+            }
+
+        });
+
+}
 
 
 /**
@@ -241,6 +263,7 @@ function checkPanels() {
 
     // Agent Status Table
     colorAgentStatusTable();
+    renameAgent();
 }
 
 // Initial
