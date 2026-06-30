@@ -40,6 +40,14 @@ function renameAgent() {
                 nameCell.textContent = "Apnur Dwi Ningsih";
             }
 
+            if (nameCell.textContent.trim() === "Rian") {
+                nameCell.textContent = "Andrian Prifandi";
+            }
+
+            // if (nameCell.textContent.trim() === "Widad") {
+            //     nameCell.textContent = "Kawican";
+            // }
+
         });
 
 }
