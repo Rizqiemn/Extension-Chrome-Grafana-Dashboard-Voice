@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Grafana Alert Monitor",
-  "version": "1.0",
+  "name": "Grafana Voice Dashboard",
+  "version": "1.1",
   "description": "Highlight widget berdasarkan nilai tertentu",
   "host_permissions": ["<all_urls>"],
   "content_scripts": [
