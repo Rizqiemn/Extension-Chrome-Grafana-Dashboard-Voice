@@ -1,0 +1,52 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+  min-width: 300px;
+}
+.container { padding: 18px; }
+h1 { margin: 0 0 5px; font-size: 21px; }
+.subtitle { margin: 0 0 18px; color: #6b7280; font-size: 12px; }
+label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 7px; }
+.input-row { display: flex; gap: 8px; margin-bottom: 14px; }
+input[type="number"], select {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 14px;
+  background: white;
+}
+input[type="number"] { width: 120px; }
+select { flex: 1; }
+.status {
+  padding: 10px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+.buttons { display: flex; gap: 8px; }
+button {
+  flex: 1;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.primary { background: #2563eb; color: white; }
+.secondary { background: #e5e7eb; color: #111827; }
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 12px;
+}
+.checkbox input { margin: 0; }
+.hint { font-size: 11px; color: #6b7280; line-height: 1.4; }
+button:disabled { opacity: .5; cursor: not-allowed; }

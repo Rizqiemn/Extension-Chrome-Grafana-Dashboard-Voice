@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Refresh Grafana</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Auto Refresh</h1>
+    <p class="subtitle">Atur interval klik tombol Refresh Grafana (by Rizqiemn).</p>
+
+    <label for="interval">Interval</label>
+    <div class="input-row">
+      <input id="interval" type="number" min="1" step="1" value="10">
+      <select id="unit">
+        <option value="seconds">Detik</option>
+        <option value="minutes">Menit</option>
+      </select>
+    </div>
+
+    <div class="status" id="status">Status: Tidak aktif</div>
+
+    <div class="buttons">
+      <button id="start" class="primary">Mulai</button>
+      <button id="stop" class="secondary">Berhenti</button>
+    </div>
+
+    <p class="hint">Pengaturan disimpan otomatis untuk penggunaan berikutnya.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

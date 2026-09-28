@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Dashboard Voice + Auto Refresh",
+  "version": "1.5.0",
+  "description": "Highlight widget dashboard berdasarkan nilai tertentu, auto sort tabel status, dan auto klik tombol Refresh Grafana dengan interval yang bisa diatur.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Dashboard Voice + Auto Refresh"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-voice.js",
+        "content-sort.js",
+        "content-refresh.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
